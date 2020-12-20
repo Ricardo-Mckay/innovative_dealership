@@ -1,0 +1,75 @@
+{% extends 'landing_page/Base.html' %}
+{% block nav%}
+{%load static%}
+<section id="gallery" class="gallery py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 mx-auto col-sm-6 text-center">
+                <h1 class="text-capitalize gallery-title">Gallery</h1>
+            </div>
+        </div>
+        <!--gallery list-->
+        <div class="row gallery-items" id="gallery-items">
+            <!--single item-->
+            <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card single-item">
+                    <div class="img-container">
+                        <img src="{%static 'landing_page/ferrari_sf90_stradale_2020_4k_5k_4_hd-1280x720.jpg'%}" class="card-img-top gallery-img " alt="">
+                    </div>
+                    <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">new car</h5>
+                <span> <i class="fas fa-dollar-sign"></i> 25 000</span>
+            </div>
+                    </div>
+                </div>
+            </div>
+            <!--end single item-->
+
+                    <!--gallery list-->
+        <div class="row gallery-items" id="gallery-items">
+            <!--single item-->
+            <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card single-item">
+                    <div class="img-container">
+                        <img src="{%static 'landing_page/ferrari_laferrari_2013-1280x720.jpg'%}" class="card-img-top gallery-img " alt="">
+                    </div>
+                    <div class="card-body">
+            <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="item-name">new car</h5>
+                <span> <i class="fas fa-dollar-sign"></i> 25 000</span>
+            </div>
+                    </div>
+                </div>
+            </div>
+            <!--end single item-->
+
+                    <!--gallery list-->
+        {% for car in cars %}
+            <div class="row gallery-items" id="gallery-items">
+                <!--single item-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="{{car.image.url}}" class="card-img-top gallery-img " alt="">
+                        </div>
+                        <div class="card-body">
+                <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="item-name">{{car.cartitle}}</h5>
+                    <span> <i class="fas fa-dollar-sign"></i>{{car.price}}</span>
+                    <p class="card-text"></p>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <!--end single item-->
+
+        </div>
+    </div>
+
+
+
+</section>
+
+{%endblock%}

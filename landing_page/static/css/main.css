@@ -1,0 +1,91 @@
+
+body{
+background-color: red;
+}
+
+section.gallery.gallery.py-5{
+    background-color:black !important;
+}
+
+div#navbarNav.collapse.navbar-collapse a:hover{
+    color: gold !important; 
+}
+
+div#navbarNav.collapse.navbar-collapse{
+    padding-left: 206px;
+      padding-right: 206px;
+    font-size: 20px;
+
+}
+
+div.carousel-caption{
+padding-bottom: 250px;
+}
+
+.carousel-image-1{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4));
+}
+.btn-color{
+    background: gold;
+    color: black;
+}
+
+.btn-color:hover{
+    background: black;
+    color: gold;
+}
+h1 i{
+    color: gold;
+}
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: gold;
+    text-align: center;
+}
+
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    color: gold;
+}
+
+div.row i.fas.fa-globe.fa-9x{
+    color:black;
+
+}
+
+div.row .fas.fa-truck.fa-9x{
+    color:black;
+}
+
+div.row .fas.fa-hand-holding-usd.fa-9x{
+    color:black;
+}
+
+h5.font-weight-bold.text-uppercase{
+    color: black;
+}
+
+ h1.services.heading.text-center{
+    color: black;
+    text-decoration:underline gold;
+     text-decoration: underline;
+}
+
+div.col-10.mx-auto.col-md-6.col-lg-4.my-3{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+p#inst.inst{
+color: white !important;
+}
